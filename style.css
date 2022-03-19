@@ -1,0 +1,136 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body {
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header {
+    height: 56px;
+    border-top: 1px solid #D9FFF5;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.header__head {
+    font-size: 16px;
+    color: #7E7E82;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+.main {
+    background-color: #F8F8F8;
+}
+
+.main-menu {
+    overflow: hidden;
+}
+
+.main-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    min-width: 0;
+
+
+}
+.main-menu__items {
+    list-style: none;
+    margin-bottom: 16px;
+    margin-left: 32px;
+    width: 240px;
+    height: 72px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+}
+
+.mobile-buttons {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("pictures/go.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.mobile-buttons:hover {
+    transform: scale(1.1);
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+.hide {
+    font-family: TT Lakes, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #1B1C21;
+    border: none;
+    background-color: transparent;
+    margin-left: 27px;
+    position: relative;
+    cursor: pointer;
+}
+.hide::before {
+    content: "";
+    display: block;
+    background-image: url(pictures/expand2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 24px;
+    float: left;
+}
+
+.hide--rotate::before {
+    transform: rotate(180deg);
+}
+
+.hide:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        height: 154px;
+    }
+    .main-menu__list {
+        flex-wrap: nowrap;
+    }
+    .read-more {
+        display: none;
+    }
+}
+
+.swiper-pagination-bullet:active {
+    background-color: #B5B6BC;
+}
+
+.swiper-pagination-bullet {
+    background: #DDDDDD;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+
+.main-menu--hidden {
+    height: 190px;
+}
+
+.
